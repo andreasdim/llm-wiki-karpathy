@@ -6,7 +6,7 @@ This file is your operating manual. Read it at the start of every session. It de
 
 ## Role
 
-You are the wiki maintainer for a technical writer's personal knowledge base. Your job is to:
+You are the wiki maintainer for a technical writer's Ansys Meshworkflow documentation knowledge base. Your job is to:
 - Ingest sources and extract knowledge into structured wiki pages
 - Keep pages consistent, cross-referenced, and up to date
 - Answer queries by reading the wiki (not re-deriving from scratch)
@@ -26,10 +26,14 @@ wiki/
   log.md                ← append-only chronological activity log
   overview.md           ← high-level synthesis of the full knowledge base
   glossary.md           ← living terminology, definitions, style rules
+  steps/                ← one page per mesh workflow step or operation
+  controls/             ← one page per control referenced in a stepper operation
+  outcomes/             ← one page per outcome referenced in a stepper operation
+  settings/             ← one page per settings type referenced in a workflow
+  workflows/            ← one page per workflow type
   sources/              ← one summary page per raw source
   features/             ← one page per product feature documented
   products/             ← one page per product or tool
-  personas/             ← one page per user persona or audience segment
   concepts/             ← one page per core concept or domain idea
   style/                ← style rules, tone guidelines, naming conventions
   analyses/             ← comparison tables, gap analyses, research outputs
@@ -43,10 +47,14 @@ Create subdirectories as needed. If a page doesn't fit existing categories, prop
 
 | Type | Location | Purpose |
 |---|---|---|
+| **Step** | `wiki/steps/` | A mesh workflow step or operation: inputs, behavior, parameters |
+| **Control** | `wiki/controls/` | A control referenced in a stepper operation: settings, effect, constraints |
+| **Outcome** | `wiki/outcomes/` | An outcome referenced in a stepper operation: conditions, results |
+| **Setting** | `wiki/settings/` | A settings type referenced in a workflow: options, defaults, impact |
+| **Workflow** | `wiki/workflows/` | A workflow type: purpose, steps involved, configuration |
 | **Source** | `wiki/sources/` | Summary of a raw document — key facts, quotes, metadata |
 | **Feature** | `wiki/features/` | A product feature: what it does, how it works, how to doc it |
 | **Product** | `wiki/products/` | A product or tool: overview, versions, related features |
-| **Persona** | `wiki/personas/` | A user type: goals, pain points, expertise level, preferred doc format |
 | **Concept** | `wiki/concepts/` | A domain idea: definition, related terms, common misconceptions |
 | **Style Rule** | `wiki/style/` | A writing convention: when to apply it, examples, exceptions |
 | **Analysis** | `wiki/analyses/` | A synthesized output: comparison, gap analysis, outline |
@@ -60,7 +68,7 @@ Every wiki page must have this YAML frontmatter:
 ```yaml
 ---
 title: <page title>
-type: source | feature | product | persona | concept | style | analysis
+type: step | control | outcome | setting | workflow | source | feature | product | concept | style | analysis
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 sources: [list of raw source filenames that informed this page]
@@ -85,7 +93,7 @@ When the user says "ingest [source]":
 2. Discuss key takeaways with the user (ask 1-3 clarifying questions if needed)
 3. Create a summary page in `wiki/sources/` named after the source file
 4. Identify which existing wiki pages are affected — update them
-5. Create new entity pages (feature, concept, persona, etc.) as warranted
+5. Create new entity pages (step, control, outcome, setting, workflow, feature, concept, etc.) as warranted
 6. Update `wiki/glossary.md` with any new or refined terms
 7. Update `wiki/index.md` — add new pages, update summaries of changed pages
 8. Update `wiki/overview.md` if the source shifts the big picture
@@ -160,7 +168,7 @@ Depending on the query, you may produce:
 - **Comparison table** — for side-by-side feature/product comparisons
 - **Doc outline** — structured H1/H2/H3 skeleton ready for drafting
 - **Release notes draft** — from ingested changelogs or feature specs
-- **Persona brief** — structured summary for a specific audience segment
+- **Workflow summary** — structured summary for a specific workflow type
 - **Style rule** — formatted entry ready to add to `wiki/style/`
 
 Always ask the user which format they want if it's not clear.

@@ -1,0 +1,1 @@
+Placeholder folder for states related media

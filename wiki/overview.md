@@ -2,8 +2,8 @@
 title: Overview
 type: overview
 created: 2026-04-07
-updated: 2026-04-07
-sources: []
+updated: 2026-04-22
+sources: [mesh_workflows.md, meshworkflow.md, types.md, steps.md, controls.md, outcomes.md]
 tags: [overview, synthesis]
 ---
 
@@ -15,40 +15,62 @@ tags: [overview, synthesis]
 
 ## Current State
 
-This wiki was just initialized. No sources have been ingested yet.
-
-**Source count:** 0
-**Wiki pages:** 4 (index, log, overview, glossary)
-**Last ingest:** —
+**Source count:** 19 source summaries (covering ~120 raw files + 1 conversation)
+**Wiki pages:** 199 total
+**Last ingest:** 2026-04-22 (topology_diagnostics_conversation.md)
 **Last lint:** —
 
 ---
 
 ## What This Wiki Covers
 
-*(Will populate automatically as you ingest sources. The LLM will update this section to reflect the domain, products, and topics you're building knowledge about.)*
+This wiki documents **Ansys Mesh Workflows** — a framework within **Ansys Mechanical** for creating simulation meshes using **Ansys PrimeMesh** technology. Mesh Workflows provide an alternative paradigm for meshing complicated CAD geometries that need cleanup (hole filling, overlap resolution, wrapping).
+
+### Domain Scope
+
+- **Acoustic meshing**: External FEM, Internal FEM, BEM, and FSI FEM acoustics workflows
+- **Stacker meshing**: Layered mesh generation for PCB/electronics geometries
+- **Direct morphing**: Mesh shape modification without remeshing
+- **General meshing operations**: Surface meshing, volume meshing, topology management, enclosures, extrusions
+
+### Architecture
+
+Mesh Workflows follow a **Steps → Controls → Outcomes** architecture:
+- **Steps** are sequential operations (34 documented)
+- **Controls** parameterize step execution (93 documented)
+- **Outcomes** capture results and chain between steps (27 documented)
+- **Workflow Types** provide predefined templates (6 types)
+
+The underlying engine is **PrimeMesh**, which operates on its own domain model with **Parts**, **Zones**, and **Labels** — separate from the Mechanical CAD model.
 
 ---
 
 ## Key Themes
 
-*(Will populate after first few ingests. Expect themes like: product areas, user personas, documentation gaps, terminology decisions, style conventions.)*
+1. **Acoustic mesh workflows** dominate the predefined templates (4 of 6 types)
+2. **Stacker workflow** targets electronics/PCB layered geometries
+3. **Wrapping** is a central concept for handling dirty/leaky geometry
+4. **Scoping** via regex patterns connects controls to specific entities
+5. **Size fields** provide flexible mesh density control
+6. **Topology management** (create, repair, diagnose, delete) is a major operational area
+7. **Parametrizable/publishable parameters** enable variable-driven values and design study exposure across controls
 
 ---
 
 ## Open Questions
 
-*(Questions that came up during ingests or queries but haven't been resolved yet. The LLM will maintain this list.)*
-
-- What product or domain is this wiki primarily covering?
-- Who are the primary user personas to document for?
-- Is there an existing style guide to ingest as a baseline?
+- Are there additional workflow types beyond the 6 documented?
+- What are the specific version requirements or release notes for these features?
+- Are there workflow types for structural (non-acoustic) applications?
 
 ---
 
 ## Knowledge Gaps
 
-*(Areas where more sources are needed. The LLM will flag these during ingests and lint passes.)*
+- No style guide content ingested yet
+- No persona/audience documentation
+- No version history or release notes
+- The `raw/samples/` folder contains only a placeholder README
 
 ---
 

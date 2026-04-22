@@ -1,0 +1,224 @@
+{
+  "main": {
+    "id": "df33e92397e0919a",
+    "type": "split",
+    "children": [
+      {
+        "id": "99e4c5e2b63ca55d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f39b561dd3c50928",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "controls/topology-diagnostics.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "topology-diagnostics"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0a829a11238cc157",
+    "type": "split",
+    "children": [
+      {
+        "id": "dde47a2345067f2b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4913d4b9197c39ac",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "e8ca3fa0df0dde7d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "e9088db261242979",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "180070729cf5cafa",
+    "type": "split",
+    "children": [
+      {
+        "id": "03118579d49b19f3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d3aeb4c074e836c3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "controls/topology-diagnostics.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for topology-diagnostics"
+            }
+          },
+          {
+            "id": "558f9222ed108eb3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "controls/topology-diagnostics.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from topology-diagnostics"
+            }
+          },
+          {
+            "id": "16dd81a1fc76335d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "8792e97f0255919b",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "2e8f90fd101cdfdb",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "controls/topology-diagnostics.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of topology-diagnostics"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "f39b561dd3c50928",
+  "lastOpenFiles": [
+    "concepts/parametrizable-publishable.md",
+    "sources/topology-diagnostics-conversation.md",
+    "controls/topology-diagnostics-user-names.md",
+    "sources/workflow-rules.md",
+    "steps/stacker-mesh-volume.md",
+    "steps/stacker-flatten-volume.md",
+    "steps/stacker-diagnostics.md",
+    "steps/stacker-delete-base-face.md",
+    "steps/stacker-detect-stackable-bodies.md",
+    "steps/write-mesh.md",
+    "steps/wrap.md",
+    "steps/replicate-mesh.md",
+    "steps/repair-topology.md",
+    "steps/read-mesh.md",
+    "steps/prescribed-points.md",
+    "steps/patch-holes.md",
+    "steps/multizone-mesh-volume.md",
+    "steps/multizone-mesh-surface.md",
+    "steps/model-diagnostics.md",
+    "steps/mesh-volume.md",
+    "steps/mesh-surface.md",
+    "steps/merge-volumes.md",
+    "steps/merge-parts.md",
+    "steps/merge-nodes.md",
+    "steps/manage-zone-properties.md",
+    "steps/improve-volume-mesh.md",
+    "analyses",
+    "style",
+    "features",
+    "settings",
+    "workflows",
+    "outcomes",
+    "controls",
+    "steps",
+    "Untitled.canvas"
+  ]
+}

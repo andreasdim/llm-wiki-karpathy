@@ -1,0 +1,130 @@
+# External FEM Acoustics Workflow
+
+- External FEM Acoustics Workflow rules usage: Generates the Acoustic mesh for a Finite Element Method analysis for the external of a structure.
+- The Fill Holes step in a External FEM Acoustics Workflow is executing a Fill Holes operation.
+- The Wrap Parts step in a External FEM Acoustics Workflow is executing a Wrap operation.
+- The Improve Wrap Mesh step in a External FEM Acoustics Workflow is executing a Mesh Surface operation.
+- The Create Enclosure step in a External FEM Acoustics Workflow is executing a Create Enclosure operation.
+- The Mesh Volume step in a External FEM Acoustics Workflow is executing a Mesh Volume operation.
+- The Improve Volume Mesh step in a External FEM Acoustics Workflow is executing a Improve Volume Mesh operation.
+- The Extrude Acoustic Region step in a External FEM Acoustics Workflow is executing a Extrude operation.
+- The Extrude PML Region step in a External FEM Acoustics Workflow is executing a Extrude operation.
+- The Create Acoustic Regions step in a External FEM Acoustics Workflow is executing a Create Topology operation.
+- The Merge Acoustic Regions step in a External FEM Acoustics Workflow is executing a Merge Volumes operation.
+- The Assign Physics Properties step in a External FEM Acoustics Workflow is executing a Manage Zone Properties operation.
+- The supported settings of External FEM Acoustics workflow:  Acoustic Settings.
+- The default queries of External FEM Acoustics workflow:  Max Skewness, Max Aspect Ratio, Min Tet Collapse, Max Jacobian Ratio (MAPDL), Min Jacobian Ratio (Corner Nodes), Min Jacobian Ratio (Gauss Points).
+- Here below are rules in specific steps
+- Step 1 - Setup Environment. This Step is Optional.
+-     Rule 1 - No Released rules information is provided for rule 1.
+- Step 2 - Load or/and import model(s). This Step is Optional.
+-     Rule 1 - Read Mesh, you have to add this operation a total of at least once, you cannot skip this operation.
+- Step 3 - Prepare the model for wrapping. This Step is Optional.
+-     Rule 1 - Fill Holes: you can add this operation at most once, you cannot add this operation more than once.
+-     Rule 2 - Patch Holes: you can add this operation at most once, you cannot add this operation more than once.
+- Step 4 - Create the size field used by the surface and volume re-mesh operations. This Step is Optional.
+-     Rule 1 - Create Size Field: you can only add this operation once, you cannot add this operation less than once, you cannot add this operation more than once.
+- Step 5 - Wrap the model. This Step is Required.
+-     Rule 1 - Wrap: you can only add this operation once, you cannot add this operation less than once, you cannot add this operation more than once.
+- Step 6 - Re-mesh and improve wrapped part. This Step is Required.
+-     Rule 1 - Mesh Surface: you can only add this operation once, you cannot add this operation less than once, you cannot add this operation more than once.
+- Step 7 - Create enclosure for the wrapped part. This Step is Required.
+-     Rule 1 - Create Enclosure: you can only add this operation once, you cannot add this operation less than once, you cannot add this operation more than once.
+- Step 8 - Generate the volume mesh for the first enclosure. This Step is Required.
+-     Rule 1 - Mesh Volume: you can only add this operation once, you cannot add this operation less than once, you cannot add this operation more than once.
+- Step 9 - Improve the volume mesh. This Step is Optional.
+-     Rule 1 - Improve Volume Mesh: you can only add this operation once, you cannot add this operation less than once, you cannot add this operation more than once.
+- Step 10 - Create enclosure for the enclosed part. This Step is Optional.
+-     Rule 1 - Create Enclosure: you can only add this operation once, you cannot add this operation less than once, you cannot add this operation more than once.
+- Step 11 - Generate the volume mesh for the second enclosure. This Step is Optional.
+-     Rule 1 - Mesh Volume: you can only add this operation once, you cannot add this operation less than once, you cannot add this operation more than once.
+- Step 12 - Create the PML by extrusion of external layer. This Step is Optional.
+-     Rule 1 - Extrude: you have to add this operation at least once, you cannot skip this operation.
+- Step 13 - Create the topology on the acoustics mesh part. This Step is Required.
+-     Rule 1 - Create Topology: you can only add this operation once, you cannot add this operation less than once, you cannot add this operation more than once.
+- Step 14 - Merge the created topo volumes. This Step is Optional.
+-     Rule 1 - Merge Volumes: you can only add this operation once, you cannot add this operation less than once, you cannot add this operation more than once.
+- Step 15 - Manage zone properties. This Step is Optional.
+-     Rule 1 - Manage Zone Properties: you have to add this operation at least once, you cannot skip this operation.
+- Step 16 - Prescribe microphones location. This Step is Optional.
+-     Rule 1 - No Released rules information is provided for rule 1.
+- Step 17 - Write the updated model. This Step is Optional.
+-     Rule 1 - Write Mesh: you can only add this operation once, you cannot add this operation less than once, you cannot add this operation more than once.
+
+# Internal FEM Acoustics Workflow
+
+- Internal FEM Acoustics Workflow rules usage: Generates the Acoustic mesh for a Finite Element Method analysis for the internal of a structure.
+- The Fill Holes step in a Internal FEM Acoustics Workflow is executing a Fill Holes operation.
+- The Wrap Parts step in a Internal FEM Acoustics Workflow is executing a Wrap operation.
+- The Improve Wrap Mesh step in a Internal FEM Acoustics Workflow is executing a Mesh Surface operation.
+- The Mesh Volume step in a Internal FEM Acoustics Workflow is executing a Mesh Volume operation.
+- The Improve Volume Mesh step in a Internal FEM Acoustics Workflow is executing a Improve Volume Mesh operation.
+- The Create Acoustic Region step in a Internal FEM Acoustics Workflow is executing a Create Topology operation.
+- The Assign Physics Properties step in a Internal FEM Acoustics Workflow is executing a Manage Zone Properties operation.
+- The supported settings of Internal FEM Acoustics workflow:  Acoustic Settings.
+- The default queries of Internal FEM Acoustics workflow:  Max Skewness, Max Aspect Ratio, Min Tet Collapse, Max Jacobian Ratio (MAPDL), Min Jacobian Ratio (Corner Nodes), Min Jacobian Ratio (Gauss Points).
+- Here below are rules in specific steps
+- Step 1 - Setup Environment. This Step is Optional.
+-     Rule 1 - No Released rules information is provided for rule 1.
+- Step 2 - Load or/and import model(s). This Step is Optional.
+-     Rule 1 - Read Mesh, you have to add this operation a total of at least once, you cannot skip this operation.
+- Step 3 - Prepare the model for wrapping. This Step is Optional.
+-     Rule 1 - Fill Holes: you can add this operation at most once, you cannot add this operation more than once.
+-     Rule 2 - Patch Holes: you can add this operation at most once, you cannot add this operation more than once.
+- Step 4 - Create the size field used by the surface and volume re-mesh operations. This Step is Optional.
+-     Rule 1 - Create Size Field: you can only add this operation once, you cannot add this operation less than once, you cannot add this operation more than once.
+- Step 5 - Wrap the model. This Step is Required.
+-     Rule 1 - Wrap: you can only add this operation once, you cannot add this operation less than once, you cannot add this operation more than once.
+- Step 6 - Re-mesh and improve wrapped part. This Step is Required.
+-     Rule 1 - Mesh Surface: you can only add this operation once, you cannot add this operation less than once, you cannot add this operation more than once.
+- Step 7 - Compute the mesh of the internal volume. This Step is Required.
+-     Rule 1 - Mesh Volume: you can only add this operation once, you cannot add this operation less than once, you cannot add this operation more than once.
+- Step 8 - Improve the volume mesh. This Step is Optional.
+-     Rule 1 - Improve Volume Mesh: you can only add this operation once, you cannot add this operation less than once, you cannot add this operation more than once.
+- Step 9 - Create the topology on the acoustics mesh part. This Step is Optional.
+-     Rule 1 - Create Topology: you can only add this operation once, you cannot add this operation less than once, you cannot add this operation more than once.
+- Step 10 - Merge the created topo volumes. This Step is Optional.
+-     Rule 1 - Merge Volumes: you can only add this operation once, you cannot add this operation less than once, you cannot add this operation more than once.
+- Step 11 - Manage zone properties. This Step is Optional.
+-     Rule 1 - Manage Zone Properties: you have to add this operation at least once, you cannot skip this operation.
+- Step 12 - Prescribe microphones location. This Step is Optional.
+-     Rule 1 - No Released rules information is provided for rule 1.
+- Step 13 - Write the updated model. This Step is Optional.
+-     Rule 1 - Write Mesh: you can only add this operation once, you cannot add this operation less than once, you cannot add this operation more than once.
+
+# BEM Acoustics Workflow
+
+- BEM Acoustics Workflow rules usage: Generates the Acoustic mesh for a Boundary Element Method analysis.
+- The Fill Holes step in a BEM Acoustics Workflow is executing a Fill Holes operation.
+- The Wrap Parts step in a BEM Acoustics Workflow is executing a Wrap operation.
+- The Improve Wrap Mesh step in a BEM Acoustics Workflow is executing a Mesh Surface operation.
+- The Quad Based Remesh step in a BEM Acoustics Workflow is executing a Mesh Surface operation.
+- The Create Enclosure step in a BEM Acoustics Workflow is executing a Create Enclosure operation.
+- The Create Acoustic Region step in a BEM Acoustics Workflow is executing a Create Topology operation.
+- The Assign Physics Properties step in a BEM Acoustics Workflow is executing a Manage Zone Properties operation.
+- The supported settings of BEM Acoustics workflow:  Acoustic Settings.
+- The default queries of BEM Acoustics workflow:  Max Skewness, Max Aspect Ratio, Min Tet Collapse, Max Jacobian Ratio (MAPDL), Min Jacobian Ratio (Corner Nodes), Min Jacobian Ratio (Gauss Points).
+- Here below are rules in specific steps
+- Step 1 - Setup Environment. This Step is Optional.
+-     Rule 1 - No Released rules information is provided for rule 1.
+- Step 2 - Load or/and import model(s). This Step is Optional.
+-     Rule 1 - Read Mesh, you have to add this operation a total of at least once, you cannot skip this operation.
+- Step 3 - Prepare the model for wrapping. This Step is Optional.
+-     Rule 1 - Fill Holes: you can add this operation at most once, you cannot add this operation more than once.
+-     Rule 2 - Patch Holes: you can add this operation at most once, you cannot add this operation more than once.
+- Step 4 - Wrap the model. This Step is Required.
+-     Rule 1 - Wrap: you have to add this operation at least once, you cannot skip this operation.
+-     Rule 2 - Wrap: you can add this operation at most two times, you cannot add this operation more than two times.
+- Step 5 - Re-mesh and improve wrapped part. This Step is Optional.
+-     Rule 1 - Mesh Surface: you can add this operation at most two times, you cannot add this operation more than two times.
+- Step 6 - Improve the surface mesh. This Step is Optional.
+-     Rule 1 - Improve Surface Mesh: you can only add this operation once, you cannot add this operation less than once, you cannot add this operation more than once.
+- Step 7 - Create enclosure for the enclosed part. This Step is Optional.
+-     Rule 1 - Create Enclosure: you can only add this operation once, you cannot add this operation less than once, you cannot add this operation more than once.
+- Step 8 - Create the topology on the acoustics mesh part. This Step is Required.
+-     Rule 1 - Create Topology: you can only add this operation once, you cannot add this operation less than once, you cannot add this operation more than once.
+- Step 9 - Manage zone properties. This Step is Optional.
+-     Rule 1 - Manage Zone Properties: you have to add this operation at least once, you cannot skip this operation.
+- Step 10 - Write the updated model. This Step is Optional.
+-     Rule 1 - Write Mesh: you can only add this operation once, you cannot add this operation less than once, you cannot add this operation more than once.
+

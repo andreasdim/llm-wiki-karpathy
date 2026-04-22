@@ -1,0 +1,1 @@
+Placeholder folder for types related media
