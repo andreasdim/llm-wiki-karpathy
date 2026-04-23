@@ -7,7 +7,11 @@ sources: [new.md]
 tags: [source, morphing, symmetry, periodic, planar]
 ---
 
-Guide for applying Symmetry Definitions during Direct Morphing in Ansys Meshing to preserve periodic or planar symmetry.
+Guide for applying Symmetry Definitions during Direct Morphing in Ansys Meshing to preserve periodic or planar symmetry. **Superseded by [[new2]]**, which expands the prerequisites section to document that scopes accept Labels, Zones, or a mix of both.
+
+## Status
+
+Superseded by `new2.md` ([[new2]]) — see that source for the updated scoping information.
 
 ## Key Facts
 

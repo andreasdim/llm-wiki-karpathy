@@ -154,3 +154,25 @@ Key additions:
 - Prerequisite Named Selections pattern (sym_side_A, sym_side_B, sym_axis, sym_plane)
 - Post-morph validation checklist (node matching, element quality, visual, solver-side)
 - Common pitfalls for symmetry-preserving morphing
+
+---
+
+## [2026-04-23] ingest | new2.md (Symmetry Definitions in Morphing — Revised)
+
+Source: Revised guide for Symmetry Definitions during Direct Morphing. Supersedes `new.md` with expanded scoping documentation.
+
+**Key change:** Section 2 (Prerequisites) now documents that scopes can use **Labels (Named Selections)**, **Zones (Mesh Zones / Face Zones)**, or **a mix of both** — not just Labels as previously documented.
+
+Pages created: 1
+- `wiki/sources/new2.md` — revised source summary
+
+Pages updated: 5
+- `wiki/controls/symmetry-definition.md` — updated Properties table and Prerequisites to reflect labels/zones flexibility; added sources reference
+- `wiki/sources/new.md` — marked as superseded by new2
+- `wiki/concepts/morphing.md` — added labels/zones note to Symmetry in Morphing section
+- `wiki/index.md` — added new source entry, updated symmetry-definition summary
+- `wiki/overview.md` — updated source/page counts and Direct Morphing scope description
+
+Key additions:
+- Labels-or-zones scoping flexibility for Symmetry Definition and Direct Morphing step scopes
+- A single scope field can mix labels and zones

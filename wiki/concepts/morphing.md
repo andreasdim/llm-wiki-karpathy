@@ -3,7 +3,7 @@ title: Morphing
 type: concept
 created: 2026-04-22
 updated: 2026-04-23
-sources: [steps/direct_morph.md, types/direct_morphing.md, new.md]
+sources: [steps/direct_morph.md, types/direct_morphing.md, new.md, new2.md]
 tags: [concepts, morphing, mesh-modification]
 ---
 
@@ -31,7 +31,7 @@ If no morphable scope is specified, one ring of neighboring faces is used automa
 
 ## Symmetry in Morphing
 
-When morphing a periodic sector or mirror-symmetric model, a **Symmetry Definition** control must be added to the Direct Morphing step. Without it, nodes on periodic boundaries are displaced independently, destroying node matching and invalidating periodic boundary conditions.
+When morphing a periodic sector or mirror-symmetric model, a **Symmetry Definition** control must be added to the Direct Morphing step. Without it, nodes on periodic boundaries are displaced independently, destroying node matching and invalidating periodic boundary conditions. Symmetry scopes can be defined using **Labels (Named Selections)**, **Zones (face/cell zones)**, or a mix of both.
 
 Two types are supported:
 - **Periodic** — rotational/cyclic symmetry. Displacements on Side A are reproduced on paired nodes on Side B after rotation through the sector angle about the axis.

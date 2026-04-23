@@ -3,7 +3,7 @@ title: Symmetry Definition
 type: control
 created: 2026-04-23
 updated: 2026-04-23
-sources: [new.md]
+sources: [new.md, new2.md]
 tags: [controls, morphing, symmetry, periodic, planar]
 ---
 
@@ -22,24 +22,26 @@ Periodic | Planar
 | Property | Applies To | Description |
 |---|---|---|
 | **Type** | Both | `Periodic` (rotational/cyclic) or `Planar` (mirror) |
-| **Scope — Side A** | Both | Named Selection for the source face of the symmetric pair |
-| **Scope — Side B** | Both | Named Selection for the target face (must have matching node pattern with Side A) |
-| **Axis Definition** | Periodic | Axis of revolution — reference a Named Selection or specify via coordinate system + direction |
+| **Scope — Side A** | Both | Named Selection or face zone for the source face of the symmetric pair |
+| **Scope — Side B** | Both | Named Selection or face zone for the target face (must have matching node pattern with Side A) |
+| **Axis Definition** | Periodic | Axis of revolution — reference a Named Selection/zone or specify via coordinate system + direction |
 | **Sector Angle** | Periodic | Angle of the periodic sector (e.g., 30° for a 12-bladed machine) |
-| **Symmetry Plane** | Planar | Mirror plane — reference a Named Selection or a coordinate-system plane |
+| **Symmetry Plane** | Planar | Mirror plane — reference a Named Selection/zone or a coordinate-system plane |
 
 ## Prerequisites
 
-The following Named Selections (labels) must exist before adding this control:
+The following scopes must exist before adding this control. Each can be defined as a **Label (Named Selection)**, a **Zone (Mesh Zone / Face Zone)**, or a mix of both:
 
 - `sym_side_A` — source periodic/symmetric face
 - `sym_side_B` — target periodic/symmetric face (must match Side A topology)
 - `sym_axis` (periodic only) — axis of revolution
 - `sym_plane` (planar only) — mirror plane
 
-The morph step itself must be scoped to `morph_target` and optionally `morph_fixed`.
+The morph step itself must be scoped to `morph_target` and optionally `morph_fixed`. These scopes can also be supplied as either labels or zones.
 
-**Important:** The two paired faces must already have a matching node pattern (e.g., from cyclic mesh or match control). The symmetry definition preserves node pairing — it does not create it.
+**Labels** are the most flexible option for custom subsets of geometry; **Zones** are convenient when the scope coincides with a physical boundary or region already grouped by the mesher. A single scope field can mix the two.
+
+**Important:** The two paired faces — whether scoped by label or by zone — must already have a matching node pattern (e.g., from cyclic mesh or match control). The symmetry definition preserves node pairing — it does not create it.
 
 ## Behavior
 
