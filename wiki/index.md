@@ -2,7 +2,7 @@
 title: Wiki Index
 type: overview
 created: 2026-04-07
-updated: 2026-04-22
+updated: 2026-04-23
 sources: []
 tags: [index, catalog]
 ---
@@ -54,6 +54,7 @@ Each entry follows this format:
 | [[operation-rules]] | Operation rules: control constraints for 26 operations | 2026-04-22 |
 | [[workflow-rules]] | Workflow rules: step rules for External/Internal/BEM acoustics | 2026-04-22 |
 | [[topology-diagnostics-conversation]] | Topology Diagnostics conversation: parameters, workflow loop, parametrizable/publishable | 2026-04-22 |
+| [[new]] | Symmetry Definitions in Morphing: periodic/planar constraints for Direct Morphing | 2026-04-23 |
 
 ---
 
@@ -211,6 +212,7 @@ Each entry follows this format:
 | [[advanced-scope]] | Morphable region control | 2026-04-22 |
 | [[advanced-solver]] | Morphing algorithm selection | 2026-04-22 |
 | [[morph-recording]] | Save morph to file | 2026-04-22 |
+| [[symmetry-definition]] | Periodic/planar symmetry constraint for morphing | 2026-04-23 |
 
 ### Stacker Controls
 | Page | Summary | Updated |

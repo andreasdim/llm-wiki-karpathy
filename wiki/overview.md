@@ -2,7 +2,7 @@
 title: Overview
 type: overview
 created: 2026-04-07
-updated: 2026-04-22
+updated: 2026-04-23
 sources: [mesh_workflows.md, meshworkflow.md, types.md, steps.md, controls.md, outcomes.md]
 tags: [overview, synthesis]
 ---
@@ -15,9 +15,9 @@ tags: [overview, synthesis]
 
 ## Current State
 
-**Source count:** 19 source summaries (covering ~120 raw files + 1 conversation)
-**Wiki pages:** 199 total
-**Last ingest:** 2026-04-22 (topology_diagnostics_conversation.md)
+**Source count:** 20 source summaries (covering ~120 raw files + 1 conversation + 1 guide)
+**Wiki pages:** 201 total
+**Last ingest:** 2026-04-23 (new.md — Symmetry Definitions in Morphing)
 **Last lint:** 2026-04-22
 
 ---
@@ -30,7 +30,7 @@ This wiki documents **Ansys Mesh Workflows** — a framework within **Ansys Mech
 
 - **Acoustic meshing**: External FEM, Internal FEM, BEM, and FSI FEM acoustics workflows
 - **Stacker meshing**: Layered mesh generation for PCB/electronics geometries
-- **Direct morphing**: Mesh shape modification without remeshing
+- **Direct morphing**: Mesh shape modification without remeshing, including symmetry-preserving morphing for periodic/planar models
 - **General meshing operations**: Surface meshing, volume meshing, topology management, enclosures, extrusions
 
 ### Architecture

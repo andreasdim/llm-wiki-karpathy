@@ -2,7 +2,7 @@
 title: Wiki Log
 type: overview
 created: 2026-04-07
-updated: 2026-04-22
+updated: 2026-04-23
 sources: []
 tags: [log, activity]
 ---
@@ -130,3 +130,27 @@ Fixes applied:
 
 Pages consulted: mesh-volume, failure-info, surface-mesh-diagnostics-outcome, model-diagnostics, topology-diagnostics, surface-mesh-diagnostics, resolve-self-intersections, constant-size-volume-mesher, volume-mesh-improvement, quality-metrics, improve-volume-mesh
 Output filed: yes — `wiki/analyses/volume-meshing-failure-troubleshooting.md`
+
+---
+
+## [2026-04-23] ingest | new.md (Symmetry Definitions in Morphing)
+
+Source: Guide for applying Symmetry Definitions during Direct Morphing to preserve periodic or planar symmetry.
+
+Pages created: 2
+- `wiki/sources/new.md` — source summary
+- `wiki/controls/symmetry-definition.md` — new control page for Symmetry Definition (periodic/planar)
+
+Pages updated: 6
+- `wiki/steps/direct-morph.md` — added Symmetry Definition to controls list and related pages
+- `wiki/workflows/direct-morphing.md` — added Symmetry Definition to available controls and related pages
+- `wiki/concepts/morphing.md` — added "Symmetry in Morphing" section with periodic/planar explanation
+- `wiki/glossary.md` — added Symmetry Definition and Sector Angle terms
+- `wiki/index.md` — added new source and control entries
+- `wiki/overview.md` — updated page/source counts, expanded Direct Morphing scope description
+
+Key additions:
+- Symmetry Definition control: periodic (rotational/cyclic) and planar (mirror) types
+- Prerequisite Named Selections pattern (sym_side_A, sym_side_B, sym_axis, sym_plane)
+- Post-morph validation checklist (node matching, element quality, visual, solver-side)
+- Common pitfalls for symmetry-preserving morphing

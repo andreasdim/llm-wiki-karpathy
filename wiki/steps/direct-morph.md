@@ -2,8 +2,8 @@
 title: Direct Morph
 type: step
 created: 2026-04-22
-updated: 2026-04-22
-sources: [steps/direct_morph.md]
+updated: 2026-04-23
+sources: [steps/direct_morph.md, new.md]
 tags: [steps, morphing]
 ---
 
@@ -20,6 +20,7 @@ Applies prescribed modifications to mesh through multiple morphing techniques.
 - **Advanced Scope** — fine-tune morphable region
 - **Advanced Solver** — morphing algorithm selection
 - **Morph Recording** — save morph to file
+- **Symmetry Definition** — preserve periodic or planar symmetry during morph
 
 ## Outcomes
 
@@ -34,3 +35,4 @@ Automatically uses one ring of neighboring faces as morphable scope if not speci
 - [[morphing]] — morphing concept
 - [[direct-morphing]] — morphing workflow
 - [[translation-morphing]], [[rotation-morphing]], [[offset-morphing]], [[fillet-morphing]] — morph controls
+- [[symmetry-definition]] — symmetry constraint control

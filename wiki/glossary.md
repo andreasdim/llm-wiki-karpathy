@@ -2,8 +2,8 @@
 title: Glossary
 type: glossary
 created: 2026-04-07
-updated: 2026-04-22
-sources: [mesh_workflows.md, meshworkflow.md, mesh_workflow_intro/mesh_workflow_concepts.md, controls.md, outcomes.md, types.md, states.md, topology_diagnostics_conversation.md]
+updated: 2026-04-23
+sources: [mesh_workflows.md, meshworkflow.md, mesh_workflow_intro/mesh_workflow_concepts.md, controls.md, outcomes.md, types.md, states.md, topology_diagnostics_conversation.md, new.md]
 tags: [terminology, style, glossary]
 ---
 
@@ -153,6 +153,10 @@ Living reference of terms, definitions, and style conventions. The LLM checks th
 : A regular expression pattern for matching entity names. Supports `.*`, `?`, `[...]`, `(?!...)`, `|`.
 - See also: [[scoping]]
 
+**Sector Angle**
+: The angular span of a periodic sector in rotational/cyclic symmetry (e.g., 30° for a 12-bladed machine). Used by the Symmetry Definition control to determine the rotation between paired periodic faces.
+- See also: [[symmetry-definition]]
+
 **Seed Face**
 : Reference face in Stacker workflow used for mesh generation on the base face.
 - See also: [[stacker-flatten-volume]]
@@ -160,6 +164,10 @@ Living reference of terms, definitions, and style conventions. The LLM checks th
 **Size Field**
 : A spatially varying mesh density definition. Created via Create Size Field step, referenced by name in meshing controls.
 - See also: [[size-fields]], [[create-size-field]]
+
+**Symmetry Definition**
+: A control added as a child of the Direct Morphing step that enforces periodic (rotational/cyclic) or planar (mirror) symmetry during morphing. Preserves node pairing on periodic boundaries so that downstream periodic boundary conditions remain valid.
+- See also: [[symmetry-definition]], [[direct-morph]]
 
 **Skewness**
 : Mesh quality metric measuring element shape distortion. Values 0 (ideal) to 1 (degenerate). Typical limit: 0.9.

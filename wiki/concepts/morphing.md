@@ -2,8 +2,8 @@
 title: Morphing
 type: concept
 created: 2026-04-22
-updated: 2026-04-22
-sources: [steps/direct_morph.md, types/direct_morphing.md]
+updated: 2026-04-23
+sources: [steps/direct_morph.md, types/direct_morphing.md, new.md]
 tags: [concepts, morphing, mesh-modification]
 ---
 
@@ -29,6 +29,18 @@ Morphing applies prescribed geometric modifications to an existing mesh without 
 
 If no morphable scope is specified, one ring of neighboring faces is used automatically.
 
+## Symmetry in Morphing
+
+When morphing a periodic sector or mirror-symmetric model, a **Symmetry Definition** control must be added to the Direct Morphing step. Without it, nodes on periodic boundaries are displaced independently, destroying node matching and invalidating periodic boundary conditions.
+
+Two types are supported:
+- **Periodic** — rotational/cyclic symmetry. Displacements on Side A are reproduced on paired nodes on Side B after rotation through the sector angle about the axis.
+- **Planar** — mirror symmetry. Normal-to-plane displacements are mirrored; in-plane components are duplicated.
+
+Multiple symmetry definitions can coexist on a single morphing step (e.g., one periodic + one planar).
+
+See [[symmetry-definition]] for full details on properties, prerequisites, and validation.
+
 ## Advanced Options
 
 - **Advanced Scope** — fine-tune morphable region (rings vs distance)
@@ -42,3 +54,4 @@ If no morphable scope is specified, one ring of neighboring faces is used automa
 - [[advanced-scope]] — scope control
 - [[advanced-solver]] — solver control
 - [[morph-recording]] — recording control
+- [[symmetry-definition]] — symmetry constraint control

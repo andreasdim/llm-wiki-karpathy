@@ -2,8 +2,8 @@
 title: Direct Morphing Workflow
 type: workflow
 created: 2026-04-22
-updated: 2026-04-22
-sources: [types/direct_morphing.md]
+updated: 2026-04-23
+sources: [types/direct_morphing.md, new.md]
 tags: [workflows, morphing]
 ---
 
@@ -25,6 +25,7 @@ Enables mesh shape modifications (translation, rotation, scaling, offset, fillet
 - Spherical Scaling Morphing
 - Offset Morphing
 - Fillet Morphing
+- Symmetry Definition (periodic or planar constraint)
 
 ## Output
 
@@ -38,3 +39,4 @@ Produces morphed mesh and optional morph recording file (.mrd) that can be appli
 - [[rotation-morphing]] — rotation control
 - [[offset-morphing]] — offset control
 - [[fillet-morphing]] — fillet control
+- [[symmetry-definition]] — symmetry constraint control
