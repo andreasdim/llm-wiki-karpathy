@@ -1,5 +1,5 @@
 ---
-title: Prescribed Points
+title: Prescribed Points from Material Points
 type: control
 created: 2026-04-22
 updated: 2026-04-22

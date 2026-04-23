@@ -1,5 +1,5 @@
 ---
-title: Topology Diagnostics
+title: Topology Diagnostics (Outcome)
 type: outcome
 created: 2026-04-22
 updated: 2026-04-22
@@ -57,5 +57,5 @@ Scope fields are available only when diagnostics issues exist. Each diagnostic c
 ## Related Pages
 
 - [[scope]]
-- [[surface-mesh-diagnostics]]
+- [[surface-mesh-diagnostics-outcome]]
 - [[quality-metrics]]

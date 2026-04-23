@@ -26,6 +26,6 @@ Adds prescribed points and labels to volume mesh at specified locations for sens
 
 ## Related Pages
 
-- [[prescribed-points]] — points control
+- [[prescribed-points-from-material-points]] — points control
 - [[prescribed-points-from-external-file]] — file input control
 - [[material-point]] — coordinate control

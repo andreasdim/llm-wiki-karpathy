@@ -32,6 +32,6 @@ The **Stacker: Volume Meshing** control generates volume mesh by sweeping from a
 ## Related Pages
 
 - [[stacker-volume-flattening]]
-- [[stacker-diagnostics]]
+- [[stacker-diagnostics-params]]
 - [[stackable-bodies-detection]]
 - [[number-of-divisions-on-edges]]

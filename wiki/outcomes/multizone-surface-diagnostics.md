@@ -55,5 +55,5 @@ Each diagnostic category has a scoping method and scoping pattern pair:
 
 - [[scope]]
 - [[multizone-volume-diagnostics]]
-- [[surface-mesh-diagnostics]]
-- [[topology-diagnostics]]
+- [[surface-mesh-diagnostics-outcome]]
+- [[topology-diagnostics-outcome]]

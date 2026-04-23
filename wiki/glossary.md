@@ -64,6 +64,10 @@ Living reference of terms, definitions, and style conventions. The LLM checks th
 : Simulation involving coupled structural and fluid domains with shared interface nodes.
 - See also: [[fsi-fem-acoustics]]
 
+**Inflation**
+: Boundary layer mesh generation that creates prismatic layers of elements near wall boundaries. Used for capturing boundary layer flow effects. Currently in Beta.
+- See also: [[inflation]]
+
 **Growth Rate**
 : The rate at which element sizes increase from one layer to the next. Default varies by context (1.2 for sizing, 1.5 for global).
 - See also: [[global-settings]]
@@ -80,9 +84,17 @@ Living reference of terms, definitions, and style conventions. The LLM checks th
 : Tolerance for features perpendicular to the stacking direction in Stacker workflows.
 - See also: [[stacker-settings]]
 
+**Live Region Type**
+: A wrapper control parameter that defines which region to keep after wrapping: Material Point (keep the region containing the point) or Enclosure (keep the enclosed region).
+- See also: [[constant-size-wrapper]], [[size-field-wrapper]]
+
 **Material Point**
 : A coordinate point identifying a region of interest. Used in wrapping (include/exclude), patching, and volume meshing.
 - See also: [[material-point]]
+
+**Merge Nodes**
+: An operation that merges coincident or near-coincident nodes within a specified tolerance to create conformal mesh between adjacent parts.
+- See also: [[merge-nodes]], [[merge-nodes-on-faces]]
 
 **Mesh Workflow**
 : A framework object in Ansys Mechanical containing Input, Steps, and Output for creating simulation meshes.
@@ -125,6 +137,10 @@ Living reference of terms, definitions, and style conventions. The LLM checks th
 : A control parameter property meaning the value can be exposed to a higher level (design study, optimization run, parent workflow) for external control. Published parameters appear in the Property Worksheet.
 - See also: [[parametrizable-publishable]], [[property-worksheet]]
 
+**Quad Layer**
+: A surface meshing control that generates layers of quadrilateral elements around circular edges to improve mesh quality in cylindrical regions.
+- See also: [[quad-layer]]
+
 **Property Worksheet**
 : UI panel for viewing and editing published control properties in tabular form.
 - See also: [[property-worksheet]]
@@ -160,6 +176,10 @@ Living reference of terms, definitions, and style conventions. The LLM checks th
 **Step**
 : A sequential operation within a Mesh Workflow. Each step has an operation type with specific controls and outcomes.
 - See also: [[steps-overview]]
+
+**Tetrahedron**
+: A four-faced volumetric element used in unstructured volume meshing. Tetrahedral meshing is the default for complex geometries.
+- See also: [[constant-size-volume-mesher]], [[size-field-volume-mesher]]
 
 **Topology**
 : The geometric structure (vertices, edges, faces, volumes) overlaid on mesh data. Can be created, repaired, or deleted.

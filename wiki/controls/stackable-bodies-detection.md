@@ -31,6 +31,6 @@ The **Stackable Bodies Detection** control analyzes scoped bodies to determine w
 ## Related Pages
 
 - [[stackable-bodies-detection-user-names]]
-- [[stacker-diagnostics]]
+- [[stacker-diagnostics-params]]
 - [[stacker-volume-flattening]]
 - [[stacker-volume-meshing]]

@@ -1,3 +1,12 @@
+---
+title: Wiki Log
+type: overview
+created: 2026-04-07
+updated: 2026-04-22
+sources: []
+tags: [log, activity]
+---
+
 # Wiki Log
 
 Append-only chronological record of all activity: ingests, queries, and lint passes.
@@ -90,3 +99,34 @@ Key additions:
 - Diagnostic workflow loop: Diagnose → Inspect → Repair → Re-diagnose → Mesh
 - Parametrizable/Publishable as a cross-cutting concept with practical benefits (design studies, consistency, reusability)
 - Corrected Overlapping Face Tolerance description from "angle" to "distance"
+
+---
+
+## [2026-04-22] lint
+
+Issues found: 7
+1. **Filename collisions** (HIGH) — 4 filenames existed in multiple directories, making [[wiki-links]] ambiguous: topology-diagnostics, surface-mesh-diagnostics, stacker-diagnostics, prescribed-points
+2. **Missing glossary terms** (MEDIUM) — 5 terms used but undefined: Inflation, Live Region Type, Merge Nodes, Quad Layer, Tetrahedron
+3. **Capitalization inconsistencies** (LOW) — "mesh workflow" lowercase in 3 control pages (checkpoint, mesh-reading, mesh-writing) and 1 outcome page (quality-metrics)
+4. **Missing frontmatter** (LOW) — index.md and log.md lacked YAML frontmatter
+5. **Empty wiki sections** (INFO) — Style Rules and Analyses sections have no pages
+6. **Orphan page** (INFO) — log.md has no inbound links (acceptable)
+7. **Stale overview field** (INFO) — overview.md "Last lint" was blank
+
+Fixes applied:
+- Renamed `outcomes/topology-diagnostics.md` → `outcomes/topology-diagnostics-outcome.md`
+- Renamed `outcomes/surface-mesh-diagnostics.md` → `outcomes/surface-mesh-diagnostics-outcome.md`
+- Renamed `controls/stacker-diagnostics.md` → `controls/stacker-diagnostics-params.md`
+- Renamed `controls/prescribed-points.md` → `controls/prescribed-points-from-material-points.md`
+- Updated all cross-references (12 files) to point to new filenames
+- Added 5 glossary terms: Inflation, Live Region Type, Merge Nodes, Quad Layer, Tetrahedron
+- Fixed "mesh workflow" → "Mesh Workflow" capitalization in 4 pages
+- Added YAML frontmatter to index.md and log.md
+- Updated overview.md "Last lint" date to 2026-04-22
+
+---
+
+## [2026-04-22] query | Volume meshing failed — how to find and fix the issue
+
+Pages consulted: mesh-volume, failure-info, surface-mesh-diagnostics-outcome, model-diagnostics, topology-diagnostics, surface-mesh-diagnostics, resolve-self-intersections, constant-size-volume-mesher, volume-mesh-improvement, quality-metrics, improve-volume-mesh
+Output filed: yes — `wiki/analyses/volume-meshing-failure-troubleshooting.md`

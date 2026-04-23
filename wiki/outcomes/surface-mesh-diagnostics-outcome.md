@@ -1,5 +1,5 @@
 ---
-title: Surface Mesh Diagnostics
+title: Surface Mesh Diagnostics (Outcome)
 type: outcome
 created: 2026-04-22
 updated: 2026-04-22
@@ -51,5 +51,5 @@ Each diagnostic category has a scoping method and scoping pattern pair:
 ## Related Pages
 
 - [[scope]]
-- [[topology-diagnostics]]
+- [[topology-diagnostics-outcome]]
 - [[quality-metrics]]

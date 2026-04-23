@@ -33,5 +33,5 @@ The **Stacker: Volume Flattening** control flattens 3D geometry into a 2D repres
 
 - [[stacker-volume-flattening-user-names]]
 - [[stacker-volume-meshing]]
-- [[stacker-diagnostics]]
+- [[stacker-diagnostics-params]]
 - [[stackable-bodies-detection]]

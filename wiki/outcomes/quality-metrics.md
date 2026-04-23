@@ -7,7 +7,7 @@ sources: [quality_metrics.md]
 tags: [outcomes]
 ---
 
-Outcome that provides quality metric information (skewness and aspect ratio) for scoped entities in a mesh workflow step.
+Outcome that provides quality metric information (skewness and aspect ratio) for scoped entities in a Mesh Workflow step.
 
 ## Overview
 
@@ -25,10 +25,10 @@ Outcome that provides quality metric information (skewness and aspect ratio) for
 
 | Field | Description |
 |---|---|
-| **Max Skewness** | Maximum skewness of the mesh workflow step |
-| **Min Skewness** | Minimum skewness of the mesh workflow step |
-| **Max Aspect Ratio** | Maximum aspect ratio of the mesh workflow step |
-| **Min Aspect Ratio** | Minimum aspect ratio of the mesh workflow step |
+| **Max Skewness** | Maximum skewness of the Mesh Workflow step |
+| **Min Skewness** | Minimum skewness of the Mesh Workflow step |
+| **Max Aspect Ratio** | Maximum aspect ratio of the Mesh Workflow step |
+| **Min Aspect Ratio** | Minimum aspect ratio of the Mesh Workflow step |
 
 ## Steps That Produce This Outcome
 
@@ -37,5 +37,5 @@ Outcome that provides quality metric information (skewness and aspect ratio) for
 ## Related Pages
 
 - [[scope]]
-- [[topology-diagnostics]]
-- [[surface-mesh-diagnostics]]
+- [[topology-diagnostics-outcome]]
+- [[surface-mesh-diagnostics-outcome]]

@@ -7,7 +7,7 @@ sources: [mesh_reading.md]
 tags: [controls, mesh-io]
 ---
 
-Mesh Reading reads a mesh file into the mesh workflow model, supporting .pmdat, .msh, and .cdb formats with options to append or overwrite.
+Mesh Reading reads a mesh file into the Mesh Workflow model, supporting .pmdat, .msh, and .cdb formats with options to append or overwrite.
 
 ## Overview
 

@@ -28,5 +28,5 @@ The **Prescribed Points From External File** control imports node locations and 
 
 ## Related Pages
 
-- [[prescribed-points]]
+- [[prescribed-points-from-material-points]]
 - [[material-point]]

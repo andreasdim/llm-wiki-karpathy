@@ -55,4 +55,4 @@ Each diagnostic category has a scoping method and scoping pattern pair:
 
 - [[scope]]
 - [[multizone-surface-diagnostics]]
-- [[topology-diagnostics]]
+- [[topology-diagnostics-outcome]]

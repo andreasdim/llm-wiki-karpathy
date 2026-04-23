@@ -18,7 +18,7 @@ tags: [overview, synthesis]
 **Source count:** 19 source summaries (covering ~120 raw files + 1 conversation)
 **Wiki pages:** 199 total
 **Last ingest:** 2026-04-22 (topology_diagnostics_conversation.md)
-**Last lint:** —
+**Last lint:** 2026-04-22
 
 ---
 

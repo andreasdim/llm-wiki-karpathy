@@ -1,3 +1,12 @@
+---
+title: Wiki Index
+type: overview
+created: 2026-04-07
+updated: 2026-04-22
+sources: []
+tags: [index, catalog]
+---
+
 # Wiki Index
 
 Master catalog of all pages. The LLM reads this first when answering queries to find relevant pages. Updated on every ingest.
@@ -212,7 +221,7 @@ Each entry follows this format:
 | [[stacker-volume-flattening-user-names]] | Flattening label names | 2026-04-22 |
 | [[stacker-volume-meshing]] | Stacker volume mesh parameters | 2026-04-22 |
 | [[number-of-divisions-on-edges]] | Edge divisions for stacking | 2026-04-22 |
-| [[stacker-diagnostics]] | Stacker diagnostic parameters | 2026-04-22 |
+| [[stacker-diagnostics-params]] | Stacker diagnostic parameters | 2026-04-22 |
 
 ### Diagnostics Controls
 | Page | Summary | Updated |
@@ -241,7 +250,7 @@ Each entry follows this format:
 | [[single-zone-creation]] | Create single zone | 2026-04-22 |
 | [[scope-label-addition]] | Create label from scope | 2026-04-22 |
 | [[proximity-label-addition]] | Create label by proximity | 2026-04-22 |
-| [[prescribed-points]] | Prescribed points from material points | 2026-04-22 |
+| [[prescribed-points-from-material-points]] | Prescribed points from material points | 2026-04-22 |
 | [[prescribed-points-from-external-file]] | Prescribed points from CSV/TXT | 2026-04-22 |
 | [[solder-ball-creation]] | Solder ball geometry | 2026-04-22 |
 | [[solder-ball-user-names]] | Solder ball label names | 2026-04-22 |
@@ -269,8 +278,8 @@ Each entry follows this format:
 | [[extrusion-end-scope]] | Extrusion end face scope | 2026-04-22 |
 | [[size-field-name]] | Created size field name | 2026-04-22 |
 | [[merge-nodes-outcome]] | Number of nodes merged | 2026-04-22 |
-| [[topology-diagnostics]] | Topology issue diagnostics | 2026-04-22 |
-| [[surface-mesh-diagnostics]] | Surface mesh issue diagnostics | 2026-04-22 |
+| [[topology-diagnostics-outcome]] | Topology issue diagnostics | 2026-04-22 |
+| [[surface-mesh-diagnostics-outcome]] | Surface mesh issue diagnostics | 2026-04-22 |
 | [[multizone-surface-diagnostics]] | MultiZone surface failure info | 2026-04-22 |
 | [[multizone-volume-diagnostics]] | MultiZone volume failure info | 2026-04-22 |
 | [[csv-processing-info]] | CSV file processing failures | 2026-04-22 |
@@ -330,7 +339,9 @@ Each entry follows this format:
 
 ## Analyses
 
-*(Empty — file your first query answer here to start compounding.)*
+| Page | Summary | Updated |
+|---|---|---|
+| [[volume-meshing-failure-troubleshooting]] | Step-by-step guide for diagnosing and fixing volume meshing failures | 2026-04-22 |
 
 ---
 

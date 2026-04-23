@@ -7,7 +7,7 @@ sources: [mesh_writing.md]
 tags: [controls, mesh-io]
 ---
 
-Mesh Writing writes and saves the generated mesh from the mesh workflow, supporting .pmdat, .msh, and .cdb formats.
+Mesh Writing writes and saves the generated mesh from the Mesh Workflow, supporting .pmdat, .msh, and .cdb formats.
 
 ## Overview
 
@@ -27,7 +27,7 @@ The **Mesh Writing** control exports the mesh produced at the current step to a 
 
 ## Steps That Use This Control
 
-- Final output steps in a mesh workflow
+- Final output steps in a Mesh Workflow
 - Intermediate export steps for checkpointing
 
 ## Related Pages
